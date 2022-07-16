@@ -5,18 +5,6 @@
 
 1, -7, 567, 89, 223-> 3
 
-
-int[] array = Console.ReadLine().Split(new char[]{' '},
-StringSplitOptions.RemoveEmptyEntries).Select(i=>int.Parse(i)).ToArray<int>();
-int count = 0;
-for (int i = 0; i<array.Length; i++)
-{
-    if (array[i]>0)
-    {
-        count++;
-    }
-}
-Console.WriteLine($"Кол-во положительных чисел: {count}");
 */
 
 Console.WriteLine("Кол-во вводимых чисел:");
