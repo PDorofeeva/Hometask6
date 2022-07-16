@@ -4,33 +4,6 @@
 
 b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-int GetNumber()
-{
-    int result = 0;
-    string error = "Вы ввели что-то непонятное";
-    Console.WriteLine("Введите число: ");
-
-    while (true)
-    {
-        if(int.TryParse(Console.ReadLine(), out result))
-        {
-            if (result<0)
-            {
-                Console.WriteLine(error);
-            }
-            else
-            {
-                break;
-            }
-        }
-        else
-        {
-            Console.Clear();
-            Console.WriteLine(error);
-        }
-    }
-    return result;
-}
 */
 
 int GetNumber(string message)
